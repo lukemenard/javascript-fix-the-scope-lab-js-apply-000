@@ -15,11 +15,13 @@ function yourAnimal() {
   return animal;
 }
 // 1. Defines the function 'yourAnimal'
-      //'yourAnimal' accepts one parameter, 'animal'
+      //'yourAnimal' accepts no parameters
 // 2. Defines the LOCAL variable 'animal'
       // Assigns 'animal' the string 'cat' WITHIN the 'yourAnimal' function
 // 3. Returns the LOCAL variable 'animal'
-      // Because 'animal' is a local variable within the same scope as the 'yourAnimal' return command, the function will return the string 'cat' here
+      // 'animal' is a local variable within the same scope as the 'yourAnimal' return command
+      // The local variable 'animal' overrides the global variable 'animal' within 'yourAnimal'
+      // The function will return the string 'cat' here
 
 function add2(n) {
   const two = 2;
