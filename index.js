@@ -1,22 +1,24 @@
 var animal = 'dog';
-//Defines the global variable 'animal'
-//Assigns 'animal' the string 'dog'
+// Defines the global variable 'animal'
+      // Assigns 'animal' the string 'dog'
 
 function myAnimal() {
   return animal;
 }
-//Defines the function 'myAnimal' that accepts no parameters
-//'myAnimal' returns the global variable 'animal'
-//Because 'myAnimal' is in the same scope as 'animal,' the function will return the string 'dog' here
+// 1. Defines the function 'myAnimal'
+      // 'myAnimal' accepts no parameters
+// 2. Returns the global variable 'animal'
+      // Because 'myAnimal' is in the same scope as 'animal,' the function will return the string 'dog' here
 
 function yourAnimal(animal) {
   var animal = 'cat'
   return animal;
 }
-//Defines the function 'yourAnimal' that accepts one parameter, 'animal'
-//Defines the LOCAL variable 'animal'
-//Assigns 'animal' the string 'cat' WITHIN the 'yourAnimal' function
-//'yourAnimal' returns the LOCAL variable 'animal'
+// 1. Defines the function 'yourAnimal'
+      //'yourAnimal' accepts one parameter, 'animal'
+// 2. Defines the LOCAL variable 'animal'
+      // Assigns 'animal' the string 'cat' WITHIN the 'yourAnimal' function
+// 3. Returns the LOCAL variable 'animal'
 //Because 'animal' is a local variable within the same scope as the 'yourAnimal' return command, the function will return the string 'cat' here
 
 function add2(n) {
