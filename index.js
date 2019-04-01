@@ -1,5 +1,5 @@
 var animal = 'dog';
-// Defines the global variable 'animal'
+// 1. Defines the global variable 'animal'
       // Assigns 'animal' the string 'dog'
 
 function myAnimal() {
@@ -8,7 +8,8 @@ function myAnimal() {
 // 1. Defines the function 'myAnimal'
       // 'myAnimal' accepts no parameters
 // 2. Returns the global variable 'animal'
-      // Because 'myAnimal' is in the same scope as 'animal,' the function will return the string 'dog' here
+      // 'myAnimal' is in the same scope as 'animal'
+      // The function will return the string 'dog' here
 
 function yourAnimal() {
   var animal = 'cat';
@@ -38,20 +39,20 @@ var funkyFunction = function() {
     return "FUNKY!";
   };
 };
-//Defines the global variable 'funkyFunction'
-//Assigns funkyFunction the execution of a function that accepts no parameters
-//The first function returns the execution of a second function that accepts no parameters
-//The second function returns the string "FUNKY!"
+// 1. Defines the global variable 'funkyFunction'
+      // Assigns funkyFunction the execution of a function that accepts no parameters
+// 2. The first function returns the execution of a second function that accepts no parameters
+// 3. The second function returns the string "FUNKY!"
 
 var theFunk = funkyFunction();
-//Defines the global variable 'theFunk'
-//Assigns 'theFunk' the execution of the global variable 'Funky Function'
+// 1. Defines the global variable 'theFunk'
+      //Assigns 'theFunk' the execution of the global variable 'funkyFunction'
 
 theFunk = theFunk();
-//Assigns 'theFunk' the execution of itself
+// 1. Assigns 'theFunk' the execution of itself
 
-//1. 'theFunk' executes 'theFunk'
-//2. 'theFunk' executes 'funkyFunction'
-//3. 'funkyFunction' executes a function
-//4. This function returns a function
-//5. The second function returns the string "FUNKY!"
+// 1. 'theFunk' executes 'theFunk()'
+// 2. 'theFunk()' executes 'funkyFunction()'
+// 3. 'funkyFunction' executes a 'function()'
+// 4. This function returns a 'function()'
+// 5. The second function returns the string "FUNKY!"
