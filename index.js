@@ -19,16 +19,17 @@ function yourAnimal(animal) {
 // 2. Defines the LOCAL variable 'animal'
       // Assigns 'animal' the string 'cat' WITHIN the 'yourAnimal' function
 // 3. Returns the LOCAL variable 'animal'
-//Because 'animal' is a local variable within the same scope as the 'yourAnimal' return command, the function will return the string 'cat' here
+      // Because 'animal' is a local variable within the same scope as the 'yourAnimal' return command, the function will return the string 'cat' here
 
 function add2(n) {
   const two = 2;
   return n + two;
 }
-//Defines the function 'add2' that accepts one parameter, 'n'
-//Defines the local constant variable 'two'
-//Assigns 'two' the integer 2
-//'add2' returns 2 plus the entered integer
+// 1. Defines the function 'add2'
+      // 'add2' accepts one parameter, 'n'
+// 2. Defines the local constant variable 'two'
+      // Assigns 'two' the integer 2
+// 3. Returns the entered integer 'n' plus 2
 
 var funkyFunction = function() {
   return function() {
