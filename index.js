@@ -10,8 +10,8 @@ function myAnimal() {
 // 2. Returns the global variable 'animal'
       // Because 'myAnimal' is in the same scope as 'animal,' the function will return the string 'dog' here
 
-function yourAnimal(animal) {
-  var animal = 'cat'
+function yourAnimal() {
+  var animal = 'cat';
   return animal;
 }
 // 1. Defines the function 'yourAnimal'
